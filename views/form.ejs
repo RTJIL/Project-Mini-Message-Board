@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <a href="/">Go Back</a>
+    <div class="form-container">
+      <form method="POST" action="/new">
+        <label for="user">
+          User name:
+          <input
+            placeholder="Adolf"
+            type="text"
+            id="user"
+            name="user"
+            required
+          />
+        </label>
+
+        <label for="message">
+          Message:
+          <input
+            placeholder="if u wanna shine like sun,first burn like it."
+            type="text"
+            id="message"
+            name="message"
+            required
+          />
+        </label>
+
+        <label for="message">
+          <button type="submit">Add message</button>
+        </label>
+      </form>
+    </div>
+  </body>
+</html>
