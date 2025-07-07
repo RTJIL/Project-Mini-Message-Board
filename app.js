@@ -4,7 +4,7 @@ import { indexRouter } from "./routes/indexRoute.js"
 
 const app = express()
 
-const __dirname = import.meta.dirname
+export const __dirname = import.meta.dirname
 
 const assetsPath = path.join(__dirname, "public")
 app.use(express.static(assetsPath))
