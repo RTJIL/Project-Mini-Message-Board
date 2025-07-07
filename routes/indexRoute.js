@@ -7,6 +7,8 @@ import { getMessageById } from "../controllers/getMessageById.js"
 export const indexRouter = Router()
 
 indexRouter.get("", getAllMessages)
+
 indexRouter.get("/new", getForm)
 indexRouter.post("/new", addMessage)
+
 indexRouter.get("/:messageId", getMessageById)
