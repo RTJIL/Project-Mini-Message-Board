@@ -1,0 +1,25 @@
+{
+  "name": "project-mini-message-board",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/RTJIL/Project-Mini-Message-Board#readme",
+  "bugs": {
+    "url": "https://github.com/RTJIL/Project-Mini-Message-Board/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RTJIL/Project-Mini-Message-Board.git"
+  },
+  "license": "ISC",
+  "author": "artem",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^17.0.1",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}
