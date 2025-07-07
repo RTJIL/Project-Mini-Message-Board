@@ -7,17 +7,13 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <%- include('components/header') %>
     <main>
-      <% messages.map((message) => { %>
       <div>
         <h4><%= message.user %></h4>
         <p>says <%= message.text %></p>
         <p>at <%= message.added %></p>
-        <a href="<%= message.id%>">Open</a>
+        <a href="/">Back</a>
       </div>
-      <% }) %>
     </main>
-    <%- include('components/footer') %>
   </body>
 </html>
