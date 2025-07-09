@@ -1,14 +1,11 @@
 import { Router } from "express"
-import { getAllMessages } from "../controllers/getAllMessages.js"
-import { getForm } from "../controllers/getForm.js"
-import { addMessage } from "../controllers/addMessage.js"
-import { getMessageById } from "../controllers/getMessageById.js"
+import indexController from "../controllers/indexController.js"
 
 export const indexRouter = Router()
 
-indexRouter.get("", getAllMessages)
+indexRouter.get("", indexController.getAllMessages)
 
-indexRouter.get("/new", getForm)
-indexRouter.post("/new", addMessage)
+indexRouter.get("/new", indexController.getForm)
+indexRouter.post("/new", indexController.addMessage)
 
-indexRouter.get("/:messageId", getMessageById)
+indexRouter.get("/:messageId", indexController.getMessageById)

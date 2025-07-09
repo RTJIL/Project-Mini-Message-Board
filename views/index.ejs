@@ -11,8 +11,8 @@
     <main>
       <% messages.map((message) => { %>
       <div>
-        <h4><%= message.user %></h4>
-        <p>says <%= message.text %></p>
+        <h4><%= message.username %></h4>
+        <p> <%= message.message %></p>
         <p>at <%= message.added %></p>
         <a href="<%= message.id%>">Open</a>
       </div>
