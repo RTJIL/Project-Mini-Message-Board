@@ -18,7 +18,7 @@ VALUES
 
 async function main() {
   const client = new Client({
-    connectionString: `postgresql://${process.env.PGUSER}:${process.env.PGPASSWORD}@${process.env.PGHOST}:${Number(process.env.PGPORT)}/${process.env.PGDATABASE}`,
+    connectionString: process.env.PGINTERNAL,
     ssl: { rejectUnauthorized: false }, 
   });
 
